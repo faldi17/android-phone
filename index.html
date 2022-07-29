@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pendataan Android</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="bg-light navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="index.html?#">
+            <img src="images/android.png" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="index.html?#">
+            <img src="images/android-mini.jpg" alt="logo" />
+          </a>
+        </div>
+
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item d-none d-lg-block full-screen-link">
+              <a class="nav-link">
+                <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+              </a>
+            </li>
+            <li class="nav-item nav-logout d-none d-lg-block">
+              <a class="nav-link kursor" onclick="logout()" title="Logout">
+                <i class="mdi mdi-power" style="color: red"></i>
+              </a>
+            </li>
+          </ul>
+
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-profile bg-white">
+              <a href="#" class="nav-link">
+                <div class="nav-profile-image">
+                  <img src="images/profil.png" alt="profile">
+                  <span class="login-status online"></span>
+                  <!--change to offline or busy as needed-->
+                </div>
+                <div class="nav-profile-text d-flex flex-column">
+                  <span class="font-weight-bold mb-2">Faldiansyah</span>
+                  <span class="text-secondary text-small">F55120028</span>
+                </div>
+                <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html?#">
+                <span class="menu-title">Home</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data-tabel.html?#">
+                <span class="menu-title">Data Tabel</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formulir.html?#">
+                <span class="menu-title">Formulir</span>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="login.html">
+                <span class="menu-title">Logout</span>
+                <i class="mdi mdi-power menu-icon"></i>
+              </a>
+            </li> -->
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                  <i class="mdi mdi-home"></i>
+                </span> Home
+              </h3>
+              <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <span>Ringkasan</span>
+                    <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 stretch-card grid-margin">
+                <div class="card bg-gradient-primary card-img-holder text-white">
+                  <div class="card-body">
+                    <img src="images/circle.svg" class="card-img-absolute" alt="circle-image" />
+                    <h2 class="mb-4 text-center">
+                      SELAMAT DATANG FALDIANSYAH<br>
+                      DIHALAMAN ADMIN APLIKASI PENDATAAN HP ANDROID
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Data Terbaru</h4>
+                    <div class="d-flex">
+                      <div class="d-flex align-items-center me-4 text-muted font-weight-light">
+                        <i class="mdi mdi-clock icon-sm me-2"></i>
+                        <span>Sabtu, 30 Juli 2022</span>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-6 pe-1">
+                        <img src="images/android-4.jpg" class="mb-2 mw-100 w-100 rounded" alt="image">
+                        <img src="images/android-6.jpg" class="mw-100 w-100 rounded" alt="image" style="border:3px solid rgb(2, 199, 156)">
+                      </div>
+                      <div class="col-6 ps-1">
+                        <img src="images/android-1.jpeg" class="mb-2 mw-100 w-100 rounded" alt="image">
+                        <img src="images/android-7.jpeg" class="mw-100 w-100 rounded" alt="image">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="container-fluid d-flex justify-content-between">
+              <span class="d-block text-center text-sm-start d-sm-inline-block">Copyright © Universitas Tadulako 2022</span>
+              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Dibuat oleh Faldiansyah</span>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/manual.js"></script>
+    <script src="js/vendor.bundle.base.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/misc.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/todolist.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>

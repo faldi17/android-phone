@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pendataan Android</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="bg-light navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="index.html?#">
+            <img src="images/android.png" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="index.html?#">
+            <img src="images/android-mini.jpg" alt="logo" />
+          </a>
+        </div>
+
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item d-none d-lg-block full-screen-link">
+              <a class="nav-link">
+                <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+              </a>
+            </li>
+            <li class="nav-item nav-logout d-none d-lg-block" title="Logout">
+              <a class="nav-link kursor" onclick="logout()" style="color: red">
+                <i class="mdi mdi-power"></i>
+              </a>
+            </li>
+          </ul>
+
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-profile bg-white">
+              <a href="#" class="nav-link">
+                <div class="nav-profile-image">
+                  <img src="images/profil.png" alt="profile">
+                  <span class="login-status online"></span>
+                  <!--change to offline or busy as needed-->
+                </div>
+                <div class="nav-profile-text d-flex flex-column">
+                  <span class="font-weight-bold mb-2">Faldiansyah</span>
+                  <span class="text-secondary text-small">F55120028</span>
+                </div>
+                <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html?#">
+                <span class="menu-title">Home</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data-tabel.html?#">
+                <span class="menu-title">Data Tabel</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formulir.html?#">
+                <span class="menu-title">Formulir</span>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="login.html">
+                <span class="menu-title">Logout</span>
+                <i class="mdi mdi-power menu-icon"></i>
+              </a>
+            </li> -->
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                  <i class="mdi mdi-table-large"></i>
+                </span> Data Tabel
+              </h3>
+              <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <span>Hasil Pendataan HP Android</span>
+                    <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <table id="example" class="table table-bordered" style="border-top:1px solid lightgray">
+                      <thead>
+                        <tr>
+                          <th> No </th>
+                          <th> Nama HP </th>
+                          <th> Versi OS </th>
+                          <th> RAM </th>
+                          <th> Tanggal Rilis </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td> 1 </td>
+                          <td> Redmi 10C </td>
+                          <td> Android 11 </td>
+                          <td> 4 GB </td>
+                          <td> 5 Januari 2022 </td>
+                        </tr>
+                        <tr>
+                          <td> 2 </td>
+                          <td> Redmi 10A </td>
+                          <td> Android 10 </td>
+                          <td> 3 GB </td>
+                          <td> 9 April 2022 </td>
+                        </tr>
+                        <tr>
+                          <td> 3 </td>
+                          <td> Infinix Hot 12i </td>
+                          <td> Android 11 </td>
+                          <td> 4 GB </td>
+                          <td> 23 Juli 2022 </td>
+                        </tr>
+                        <tr>
+                          <td> 4 </td>
+                          <td> Realme C35 </td>
+                          <td> Android 11 </td>
+                          <td> 4 GB </td>
+                          <td> 2 Februari 2022 </td>
+                        </tr>
+                        <tr>
+                          <td> 5 </td>
+                          <td> Realme C31 </td>
+                          <td> Android 10 </td>
+                          <td> 4 GB </td>
+                          <td> 11 Januari 2022 </td>
+                        </tr>
+                        <tr>
+                          <td> 6 </td>
+                          <td> Realme 9i </td>
+                          <td> Android 11 </td>
+                          <td> 4 GB </td>
+                          <td> 1 Maret 2022 </td>
+                        </tr>
+                        <tr>
+                          <td> 7 </td>
+                          <td> Oppo A55 </td>
+                          <td> Android 11 </td>
+                          <td> 4 GB </td>
+                          <td> 29 Juli 2022 </td>
+                        </tr>
+                        <tr>
+                          <td> 8 </td>
+                          <td> Samsung Galaxy A13 </td>
+                          <td> Android 11 </td>
+                          <td> 6 GB </td>
+                          <td> 20 Januari 2022 </td>
+                        </tr>
+                        <tr>
+                          <td> 9 </td>
+                          <td> Samsung Galaxy A23 </td>
+                          <td> Android 11 </td>
+                          <td> 6 GB </td>
+                          <td> 20 Februari </td>
+                        </tr>
+                        <tr>
+                          <td> 10 </td>
+                          <td> Vivo Y21T </td>
+                          <td> Android 11 </td>
+                          <td> 6 GB </td>
+                          <td> 21 Maret 2022 </td>
+                        </tr>
+                        <tr>
+                          <td> 11 </td>
+                          <td> Samsung Galaxy A03 </td>
+                          <td> Android 10 </td>
+                          <td> 4 GB </td>
+                          <td> 1 Januari 2022 </td>
+                        </tr>
+                        <tr>
+                          <td> 12 </td>
+                          <td> Vivo Y75 5G </td>
+                          <td> Android 11 </td>
+                          <td> 8 GB </td>
+                          <td> 15 Juli 2022 </td>
+                        </tr>
+                        <tr>
+                          <td> 13 </td>
+                          <td> Realme 9 Pro </td>
+                          <td> Android 11 </td>
+                          <td> 8 GB </td>
+                          <td> 5 Juli 2022 </td>
+                        </tr>
+                        <tr>
+                          <td> 14 </td>
+                          <td> Infinix Hot 11S NFC </td>
+                          <td> Android 11 </td>
+                          <td> 6 GB </td>
+                          <td> 18 Juni 2022 </td>
+                        </tr>
+                        <tr>
+                          <td> 15 </td>
+                          <td> Redmi 10 </td>
+                          <td> Android 11 </td>
+                          <td> 6 GB </td>
+                          <td> 2 Juni 2022 </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="container-fluid d-flex justify-content-between">
+              <span class="d-block text-center text-sm-start d-sm-inline-block">Copyright © Universitas Tadulako 2022</span>
+              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Dibuat oleh Faldiansyah</span>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/manual.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/misc.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#example').DataTable();
+      });
+    </script>
+    <!-- End custom js for this page -->
+  </body>
+</html>
+
