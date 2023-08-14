@@ -1,4 +1,4 @@
-# Android Phone Registration
+# Android Phone
 This program is created to fulfill one of the assignments for the Web Programming 1 course
 
 ## Screenshots
